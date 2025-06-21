@@ -1,0 +1,19 @@
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+
+.terminal {
+    max-width: 600px;
+    margin: auto;
+}
+
+input {
+    background-color: #000;
+    border: none;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    width: 50px;
+}
