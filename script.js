@@ -13,10 +13,7 @@ input.addEventListener('keydown', function(e) {
                 case '1':
                     clearTerminal();
                     response = `
-> SOBRE MIM
-Meu nome é Pablo, tenho 17 anos, sou estudante de Automação Industrial e apaixonado por tecnologia, mecânica e processos produtivos.
-
-Digite 'voltar' para retornar ao menu.
+> SOBRE MIM: Me chamo Pablo, tenho 17 anos, moro em Curitiba no bairro CIC e atualmente sou estudante de Automação Industrial na UTFPR. Sou um entusiasta da tecnologia e estou sempre buscando aprender mais sobre. | Digite 'voltar' para retornar ao menu.
                     `;
                     currentState = 'aba1';
                     break;
@@ -25,12 +22,23 @@ Digite 'voltar' para retornar ao menu.
                     clearTerminal();
                     response = `
 > HABILIDADES
-- Raciocínio lógico
+> Soft Skills
 - Organização
+- Raciocínio Lógico
 - Disciplina
 - Trabalho em equipe
 - Curiosidade
 - Vontade de aprender
+- Adaptabilidade
+
+> Hard Skills
+
+- Conhecimentos básicos de elétrica
+- Nível avançado em Excel
+- Nível intermediário em AutoCAD
+- Lógica de Programação: Tenho compreensão dos princípios fundamentais de algoritmos e estruturas de dados.
+- Linguagens de Programação: Conhecimento básico em C e Python.
+
 
 Digite 'voltar' para retornar ao menu.
                     `;
@@ -47,6 +55,18 @@ Digite 'voltar' para retornar ao menu.
                     `;
                     currentState = 'aba3';
                     break;
+
+                case '4':
+                    clearTerminal();
+                    response = `
+> OBJETIVO: 
+Começar a atuar como Aprendiz de Manufatura Avançada na Bosch, para aprender na prática sobre processos industriais inteligentes. 
+
+Digite 'voltar' para retornar ao menu.
+                    `;
+                    currentState = 'aba4';
+                    break;
+    
 
                 case 'help':
                     response = `
@@ -66,14 +86,7 @@ Digite o número da opção.
         else {
             if (value === 'voltar' || value === 'menu') {
                 clearTerminal();
-                response = `
-> MENU PRINCIPAL
-1 - Sobre mim
-2 - Habilidades
-3 - Contato
-
-Digite o número da opção.
-                `;
+                
                 currentState = 'menu';
             } else {
                 response = '> Você está dentro de uma aba. Digite "voltar" para retornar ao menu.';
