@@ -9,19 +9,32 @@
 <body>
     <div class="terminal">
         <h1>> Pablo Schmidt de Sales</h1>
-        <p>> frase escolhida </p>
+        <p>> "A vida é igual a andar de bicicleta. Para manter o equilíbrio é preciso se manter em movimento."  -Albert Einstein </p>
         <p>> [1] Sobre Mim</p>
         <p>> [2] Objetivo</p>    
         <p>> [3] Por que a Bosch?</p>
         <p>> [4] Soft Skills</p>
         <p>> [5] Hard Skills</p>
         <p>> [6] Formações</p>
-        <p>> [7] Linha do Tempo Profissional</p>
+        <p>> [7] Linha do Tempo</p>
         <p>> [8] Hobbys e Interesses</p>
         <p>> [9] Família</p>
         <p>> [10] Contatos</p>
         <p>> Digite o número para saber mais: <input type="text" id="input" autofocus></p>
         <div id="output"></div>
+    </div>
+
+    <div id="box-sobre" class="hidden-box">
+<p>> SOBRE MIM: Me chamo Pablo, tenho 17 anos, moro em Curitiba no bairro CIC e atualmente sou estudante de Automação Industrial na UTFPR. Sou muito otimista e sempre gosto de ver o lado bom das coisas, gosto muito de passar tempo com minha família e amigos. Sou um entusiasta de jogos e tecnologia e estou sempre buscando aprender mais sobre.</p>
+
+<p>Digite '0' para retornar ao menu.</p>
+
+    </div>
+
+   <div id="box-objetivo" class="hidden-box">
+<p>> OBJETIVO: Atuar como aprendiz de manufatura avançada na Bosch, para transformar meu entusiasmo por tecnologia em experiêcia prática, contribuindo com muita dedicação e vontade de aprender.</p>
+
+<p>Digite '0' para retornar ao menu.</p>
     </div>
 
     <div id="box-bosch" class="hidden-box">
@@ -30,9 +43,166 @@
   <img src="imgs/fachada_bosch.jpg" alt="Fachada Bosch" class="img-box">
   <p class="legend">Evento Bosch Portas Abertas</p>
 
+  <img src="imgs/bicos.jpg" alt="Visita1" class="img-box">
+  <p class="legend">Observando os produtos</p>
+
+  <img src="imgs/maquinas.jpg" alt="Visita2" class="img-box">
+  <p class="legend">Entendendo as máquinas</p>
+
+  <img src="imgs/lucas.jpg" alt="Visita3" class="img-box">
+  <p class="legend">Eu e meu primo colaborador da Bosch</p>
+
+  <img src="imgs/clube.jpg" alt="Fachada Bosch" class="img-box">
+  <p class="legend">Clube da bosch</p>
+
   <p>Digite '0' para retornar ao menu.</p>
 </div>
 
-    <script src="script.js"></script>
+<div id="box-soft" class="hidden-box">
+<p>> SOFT SKILLS: Resiliência | Organização | Raciocínio Lógico | Comprometimento com resultados | Trabalho em equipe | Curiosidade/Vontade de aprender | Adaptabilidade</p>
+
+<p>Digite '0' para retornar ao menu.</p>
+    </div>
+
+    <div id="box-hard" class="hidden-box">
+<p>> HARD SKILLS: Nível avançado em Excel | Nível básico em AutoCAD | Lógica de Programação: Tenho compreensão dos princípios fundamentais de algoritmos e estruturas de dados | Linguagens de Programação: Conhecimento básico em C e Python. | Inglês nível - A2</p>
+
+<p>Digite '0' para retornar ao menu.</p>
+    </div>
+
+    <div id="box-formacoes" class="hidden-box">
+  <p>> FORMAÇÕES: Atualmente estou cursando Automação Industrial na UTFPR - Noturno | Concluí o Ensino Médio integrado ao Técnico em Administração | Me formei no curso de aprendiz administrativo no CIEE/PR</p>
+
+  <img src="imgs/utfpr.jpg" alt="utfpr" class="img-box">
+  <p class="legend">Primeiro dia na UTFPR</p>
+  
+  <img src="imgs/formatura.jpg" alt="Formatura" class="img-box">
+  <p class="legend">Formatura do Ensino Médio com meu pai e minha mãe</p>
+
+  <img src="imgs/ciee.jpg" alt="Ciee" class="img-box">
+  <p class="legend">Imagem do auditório do CIEE/PR</p>
+
+  <p>Digite '0' para retornar ao menu.</p>
+</div>
+
+<div id="box-timeline" class="hidden-box timeline">
+    
+    <div class="timeline-item">
+    <span class="timeline-date">2007</span>
+    <p>Primeiros anos</p>
+
+    <img src="imgs/bebe.jpg" alt="Primeiros anos" class="img-box">
+    </div>
+    
+    <div class="timeline-item">
+    <span class="timeline-date">2011</span>
+    <p>Prézinho</p>
+
+    <img src="imgs/policia.jpg" alt="Pablo no prezinho" class="img-box">
+    </div>
+
+  <div class="timeline-item">
+    <span class="timeline-date">2017</span>
+    <p>Ensino fundamental</p>
+
+    <img src="imgs/fundamental2.jpg" alt="Pablo no ensino fundamental" class="img-box">
+
+    <img src="imgs/fundamental.jpg" alt="Pablo no ensino fundamental" class="img-box">
+    </div>
+
+  <div class="timeline-item">
+    <span class="timeline-date">2022</span>
+    <p>Ensino médio</p>
+
+    <img src="imgs/ensino_medio1.jpg" alt="Ensino médio 1" class="img-box">
+
+    <img src="imgs/ensino_medio2.jpg" alt="Ensino médio 2" class="img-box">
+    </div>
+
+  <div class="timeline-item">
+    <span class="timeline-date">2023</span>
+    <p>Primeiro emprego na Racks Refrigeração</p>
+
+    <img src="imgs/aniversario.jpg" alt="Aniversário do Pablo na Racks" class="img-box">
+    </div>
+
+     <div class="timeline-item">
+    <span class="timeline-date">2024</span>
+    <p>Formatura do ensino médio</p>
+
+    <img src="imgs/amigos.jpg" alt="Formatura do ensino médio" class="img-box">
+    </div>
+
+     <div class="timeline-item">
+    <span class="timeline-date">2025</span>
+    <p>Aprovação na UTFPR</p>
+
+    <img src="imgs/utfpr_recpcao.jpg" alt="Recpção de Calouros na UTFPR" class="img-box">
+    </div>
+
+     <div class="timeline-item">
+    <span class="timeline-date">2025</span>
+    <p>Foto atual</p>
+
+    <img src="imgs/surf.jpg" alt="Foto Atual" class="img-box">
+        </div>
+
+         <p>Digite '0' para retornar ao menu.</p>
+
+    </div>
+
+    
+    <div id="box-hobbys" class="hidden-box">
+  <p>> HOBBYS E INTERESSES: Tenho como principais hobbies a corrida de rua e os jogos online competitivos. Também aprecio muito momentos em família jogando cartas, sinuca ou jogos de tabuleiro. Tenho grande interesse pelas áreas de engenharia e gosto de estudar temas como história, curiosidades de matemática, elétrica e computação. Sou um entusiasta do mundo automotivo e procuro sempre me manter atualizado sobre novidades e tendências do setor. Além disso, gosto de futebol e sou torcedor apaixonado do São Paulo Futebol Clube    |       Digite '0' para retornar ao menu.</p>
+
+  <img src="imgs/corrida2.jpg" alt="corrida" class="img-box">
+  <p class="legend">Corrida de rua</p>
+  
+  <img src="imgs/benicio.jpg" alt="War com benicio" class="img-box">
+  <p class="legend">Jogando WAR com meu sobrinho</p>
+
+  <img src="imgs/sinuca.jpg" alt="Sinuca" class="img-box">
+  <p class="legend">Jogando sinuca com meu pai e meu tio</p>
+
+  <p>Digite '0' para retornar ao menu.</p>
+</div>
+
+   <div id="box-familia" class="hidden-box">
+  <p>> FAMÍLIA: E agora a parte mais importante, a minha família. É com eles que aprendi o valor da responsabilidade, do respeito e da dedicação. Tudo o que conquisto é por eles que sempre me apoiaram em tudo, são eles que me motivam a continuar sempre buscando o melhor.</p>
+
+  <img src="imgs/pai_mae.jpg" alt="Pai e mãe" class="img-box">
+  <p class="legend">Meu pai e minha mãe</p>
+  
+  <img src="imgs/familia.jpg" alt="Familia" class="img-box">
+  <p class="legend">Meus pais e meus dois irmãos</p>
+
+  <img src="imgs/familia1.jpg" alt="Familia" class="img-box">
+  <p class="legend">Meus avôs e primos</p>
+
+  
+  <img src="imgs/familia3.jpg" alt="Familia" class="img-box">
+  <p class="legend">Minha família inteira</p>
+
+  <img src="imgs/familia2.jpg" alt="Familia" class="img-box">
+  <p class="legend">Minha família orando</p>
+
+    <img src="imgs/futebol.jpg" alt="Familia" class="img-box">
+  <p class="legend">Nosso time de futebol</p>
+
+  <p>Digite '0' para retornar ao menu.</p>
+</div>
+
+<div id="box-contato" class="hidden-box">
+<p>> CONTATO: Número: (41) 98729-8147 | Email: pablo.scsa@gmail.com | LinkedIn: https://www.linkedin.com/in/pablo-schmidt-de-sales-61684528b</p>
+
+<p>Digite '0' para retornar ao menu.</p>
+    </div>
+
+</div>
+
+    
+
+
+    <script src="script3.js"></script>
 </body>
 </html>
