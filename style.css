@@ -21,7 +21,7 @@ body {
 }
 .legend {
   font-size: 0.9em;
-  color: #aaa;
+  color: #0f0;
   margin-bottom: 20px;
   font-style: italic;
 }
@@ -32,6 +32,29 @@ body {
 
 .show-box {
   display: block;
+}
+
+.timeline {
+  border-left: 3px solid #0f0;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "●";
+  position: absolute;
+  left: -11px;
+  color: #0f0;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #0f0;
 }
 
 input {
