@@ -10,6 +10,40 @@ input.addEventListener('keydown', function(e) {
 
         if (currentState === 'menu') {
             switch(value) {
+
+case '0':
+  clearTerminal();
+
+  // Esconder todas as seções que podem estar visíveis
+  document.getElementById('box-bosch').classList.add('hidden-box');
+  document.getElementById('box-bosch').classList.remove('show-box');
+
+  document.getElementById('box-hobbys').classList.add('hidden-box');
+  document.getElementById('box-hobbys').classList.remove('show-box');
+
+  document.getElementById('box-familia').classList.add('hidden-box');
+  document.getElementById('box-familia').classList.remove('show-box');
+
+  // Mostrar o menu novamente
+  response = `
+    <p>Bem-vindo ao meu currículo interativo!</p>
+    <p>Digite o número da seção desejada:</p>
+    <p>1 - Sobre mim</p>
+    <p>2 - Objetivo</p>
+    <p>3 - Por que a Bosch</p>
+    <p>4 - Minha frase</p>
+    <p>5 - Habilidades</p>
+    <p>6 - Conhecimentos técnicos</p>
+    <p>7 - Linha do tempo profissional</p>
+    <p>8 - Hobbys e interesses</p>
+    <p>9 - Família</p>
+  `;
+  output.innerHTML = response;
+  break;
+
+
+
+
                 case '1':
                     clearTerminal();
                     response = `
@@ -27,24 +61,11 @@ input.addEventListener('keydown', function(e) {
                     break;
 
                 case '3':
-                    clearTerminal();
-                    response = `
-> POR QUE A BOSCH: A Bosch é uma empresa que representa inovação, qualidade e tecnologia de ponta. Me identifico muito com seu compromisso com a excelência e com o desenvolvimento sustentável. Além disso, é uma empresa que oferece oportunidades reais de desenvolvimento profissional, aprendizado constante e crescimento na área que em que eu tenho o sonho de trabalhar: Na área da indústria. Vejo na Bosch o lugar ideal para me tornar um profissional qualificado, preparado para os desafios do futuro e capaz de contribuir com dedicação e competência.
-
-        <img src="imgs/fachada_bosch.jpg" alt="Fachada da Bosch" class="img-box">
-        <p class="legend">Fachada da Bosch - símbolo de inovação e excelência</p>
-
-        <img src="imgs/bosch2.jpg" alt="Linha de produção Bosch" class="img-box">
-        <p class="legend">Linha de produção automatizada na Bosch</p>
-
-        <img src="imgs/bosch3.jpg" alt="Inovação na Bosch" class="img-box">
-        <p class="legend">Tecnologia e automação: pilares da Bosch</p>
-
-Digite '0' para retornar ao menu.
-                    `;
-                    currentState = 'aba3';
-                    break;
-
+  clearTerminal();
+  document.getElementById('box-bosch').classList.remove('hidden-box');
+  document.getElementById('box-bosch').classList.add('show-box');
+  currentState = 'aba3';
+  break;
                 case '4':
                     clearTerminal();
                     response = `
