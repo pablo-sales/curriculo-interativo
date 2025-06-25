@@ -26,6 +26,14 @@ body {
   font-style: italic;
 }
 
+.hidden-box {
+  display: none;
+}
+
+.show-box {
+  display: block;
+}
+
 input {
     background-color: #000;
     border: none;
