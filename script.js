@@ -13,7 +13,7 @@ input.addEventListener('keydown', function(e) {
                 case '1':
                     clearTerminal();
                     response = `
-> SOBRE MIM: Me chamo Pablo, tenho 17 anos, moro em Curitiba no bairro CIC e atualmente sou estudante de Automação Industrial na UTFPR. Sou um entusiasta da tecnologia e estou sempre buscando aprender mais sobre. | Digite 'voltar' para retornar ao menu.
+> SOBRE MIM: Me chamo Pablo, tenho 17 anos, moro em Curitiba no bairro CIC e atualmente sou estudante de Automação Industrial na UTFPR. Sou muito alegre e sempre gosto de ver o lado bom das coisas, gosto muito de passar tempo com minha família e amigos. Sou um entusiasta de jogos e tecnologia e estou sempre buscando aprender mais sobre.  |   Digite '0' para retornar ao menu.
                     `;
                     currentState = 'aba1';
                     break;
@@ -21,26 +21,7 @@ input.addEventListener('keydown', function(e) {
                 case '2':
                     clearTerminal();
                     response = `
-> HABILIDADES
-> Soft Skills
-- Organização
-- Raciocínio Lógico
-- Disciplina
-- Trabalho em equipe
-- Curiosidade
-- Vontade de aprender
-- Adaptabilidade
-
-> Hard Skills
-
-- Conhecimentos básicos de elétrica
-- Nível avançado em Excel
-- Nível intermediário em AutoCAD
-- Lógica de Programação: Tenho compreensão dos princípios fundamentais de algoritmos e estruturas de dados.
-- Linguagens de Programação: Conhecimento básico em C e Python.
-
-
-Digite 'voltar' para retornar ao menu.
+> OBJETIVO: Atuar como aprendiz de manufatura avançada na Bosch para transformar meu entusiasmo por tecnologia em experiêcia prática, contribuindo com muita dedicação e vontade de aprender.   |   Digite '0' para retornar ao menu.
                     `;
                     currentState = 'aba2';
                     break;
@@ -48,10 +29,18 @@ Digite 'voltar' para retornar ao menu.
                 case '3':
                     clearTerminal();
                     response = `
-> CONTATO
-Email: pablo@email.com
+> POR QUE A BOSCH: A Bosch é uma empresa que representa inovação, qualidade e tecnologia de ponta. Me identifico muito com seu compromisso com a excelência e com o desenvolvimento sustentável. Além disso, é uma empresa que oferece oportunidades reais de desenvolvimento profissional, aprendizado constante e crescimento na área que em que eu tenho o sonho de trabalhar: Na área da indústria. Vejo na Bosch o lugar ideal para me tornar um profissional qualificado, preparado para os desafios do futuro e capaz de contribuir com dedicação e competência.
 
-Digite 'voltar' para retornar ao menu.
+        <img src="imgs/fachada_bosch.jpg" alt="Fachada da Bosch" class="img-box">
+        <p class="legend">Fachada da Bosch - símbolo de inovação e excelência</p>
+
+        <img src="imgs/bosch2.jpg" alt="Linha de produção Bosch" class="img-box">
+        <p class="legend">Linha de produção automatizada na Bosch</p>
+
+        <img src="imgs/bosch3.jpg" alt="Inovação na Bosch" class="img-box">
+        <p class="legend">Tecnologia e automação: pilares da Bosch</p>
+
+Digite '0' para retornar ao menu.
                     `;
                     currentState = 'aba3';
                     break;
@@ -62,7 +51,7 @@ Digite 'voltar' para retornar ao menu.
 > OBJETIVO: 
 Começar a atuar como Aprendiz de Manufatura Avançada na Bosch, para aprender na prática sobre processos industriais inteligentes. 
 
-Digite 'voltar' para retornar ao menu.
+Digite '0' para retornar ao menu.
                     `;
                     currentState = 'aba4';
                     break;
@@ -84,12 +73,12 @@ Digite o número da opção.
             }
         } 
         else {
-            if (value === 'voltar' || value === 'menu') {
+            if (value === '0' || value === 'menu') {
                 clearTerminal();
                 
                 currentState = 'menu';
             } else {
-                response = '> Você está dentro de uma aba. Digite "voltar" para retornar ao menu.';
+                response = '> Você está dentro de uma aba. Digite "0" para retornar ao menu.';
             }
         }
 
@@ -112,3 +101,23 @@ function clearTerminal() {
     header.textContent = '> informacoes';
     output.appendChild(header);
 }
+
+
+/*> HABILIDADES
+> Soft Skills
+- Organização
+- Raciocínio Lógico
+- Disciplina
+- Trabalho em equipe
+- Curiosidade
+- Vontade de aprender
+- Adaptabilidade
+
+> Hard Skills
+
+- Conhecimentos básicos de elétrica
+- Nível avançado em Excel
+- Nível intermediário em AutoCAD
+- Lógica de Programação: Tenho compreensão dos princípios fundamentais de algoritmos e estruturas de dados.
+- Linguagens de Programação: Conhecimento básico em C e Python.
+*/
