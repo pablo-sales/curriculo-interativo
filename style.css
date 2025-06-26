@@ -58,8 +58,8 @@ body {
 }
 
 input {
-  background-color: #1e1e1e;
-  color: #00ff99;
+  background-color: #0c0c0c;
+  color: #0f0;
   border: 1px solid #00ff99;
   padding: 8px 10px;
   font-family: 'Courier New', monospace;
@@ -68,6 +68,5 @@ input {
   width: 300px;
   margin-top: 10px;
   border-radius: 4px;
-  box-shadow: 0 0 5px #00ff99;
   caret-color: #00ff99;
 }
